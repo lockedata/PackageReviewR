@@ -1,14 +1,19 @@
 Package: PackageReviewR
-Title: What the Package Does (one line, title case)
+Title: Review R Packages
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Steph", "Locke", email = "steph@itsalocke.com", role = c("aut", "cre"))
+Description: Utilities for reviewing R packages and producing documentation.
 Depends: R (>= 3.3.3)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: covr,
     testthat,
-    knitr,
-    rmarkdown
+    knitr
 VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+Imports: miniCRAN,
+    functionMap,
+    rmarkdown
+Remotes: MangoTheCat/functionMap
+RoxygenNote: 6.0.1
