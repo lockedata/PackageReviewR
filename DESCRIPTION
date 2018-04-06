@@ -1,6 +1,6 @@
 Package: PackageReviewR
 Title: Review R Packages
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: person("Steph", "Locke", email = "steph@itsalocke.com", role = c("aut", "cre"))
 Description: Utilities for reviewing R packages and producing documentation.
 Depends: R (>= 3.3.3)
@@ -14,6 +14,9 @@ VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 Imports: miniCRAN,
     functionMap,
-    rmarkdown
-Remotes: MangoTheCat/functionMap
+    rmarkdown,
+    goodpractice,
+    igraph
+Remotes: MangoTheCat/functionMap,
+    MangoTheCat/goodpractice
 RoxygenNote: 6.0.1
